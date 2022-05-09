@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0 50px 0px;
+    background-color: rgb(83, 83, 144);
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+}
+
+header a {
+    color: white;
+}
+
+header h2 {
+    font-weight: 200;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+.hamburger-menu-button {
+    width: min-content;
+    position: absolute;
+    display: none;   
+    right: 20px;
+    height: 24px;
+    color: white;
+}
+
+ul {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 50%;
+    margin-right: 20px;
+}
+
+li {
+    padding: 0 10px 0 10px;
+    list-style: none;
+}
+
+a  {
+    text-decoration: none;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 70px 80px 0px 80px;
+    padding-right: 20%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 32px;
+}
+
+.contact-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: rgb(69, 69, 118);
+    width: fit-content;
+    cursor: pointer;
+}
+
+.content-container {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.content-container h1 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    margin: 40px 0 40px 0;
+    color: rgb(69, 69, 118);
+}
+
+/* Make CSS Grid to conform to all resolutions */
+.content-box-full {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.content-section {
+    color: white;
+    background-color: rgb(69, 69, 118);
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 20px 0px 20px;
+}
+
+.content-section-picture {
+    color: white;
+    background-color: rgb(69, 69, 118);
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 20px 0px 20px;
+    max-width: 50%;
+    min-width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-section-picture img {
+    width: 30%;
+    height: auto;
+}
+
+
+.skill-container {
+    margin-top: 20px;
+}
+
+.skill-container h2 {
+    font-size: 25px;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 10px 0 10px 0;
+    color: rgb(69, 69, 118);
+}
+
+.skill-meter {
+    width: 50%;
+    background-color: rgb(197, 197, 197);
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-meter-fill {
+    height: 95%;
+    width: 90%;
+    background-color: rgb(69, 69, 118);
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 780px) {
+    .header-content{
+        justify-content: center;
+        align-items: center;
+        padding-right: 0%;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .contact-button {
+        margin-top: 40px;
+    }
+
+    .content-box-full {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 18px;
+        font-family: 'Roboto Flex', sans-serif;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header ul {
+        display: none;
+    }
+    .hamburger-menu-button {
+        display: block;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    header h2 {
+        font-size: 22px;
+    }
+    .header-content {
+        margin: 70px 40px 0px 40px;
+        line-height: 25px;
+    }
+}
